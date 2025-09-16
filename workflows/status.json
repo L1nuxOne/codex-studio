@@ -1,0 +1,14 @@
+{
+  "id": "status-update",
+  "name": "Status Update",
+  "description": "Compose a concise status update email with risks and next steps.",
+  "policy": "You are Codex Studio's workflow engine. Generate a crisp update suitable for stakeholders.",
+  "template": "Provide a status update for {project}. Highlight accomplishments ({wins}), current focus ({focus}), and risks ({risks}). Close with the next checkpoint ({next}).",
+  "fields": [
+    { "name": "project", "label": "Project", "type": "text", "required": true },
+    { "name": "wins", "label": "Wins", "type": "textarea", "required": true },
+    { "name": "focus", "label": "Focus", "type": "textarea", "required": true },
+    { "name": "risks", "label": "Risks", "type": "textarea" },
+    { "name": "next", "label": "Next Checkpoint", "type": "text", "required": true }
+  ]
+}

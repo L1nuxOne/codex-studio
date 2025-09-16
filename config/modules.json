@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "types": [
+    { "id": "NowPane", "title": "Now", "description": "Stream-first assistant output renderer." },
+    { "id": "ComposerPane", "title": "Composer", "description": "Prompt composer with shortcuts." },
+    { "id": "ToolDrawer", "title": "Tool Drawer", "description": "Email tool and workflow launcher." },
+    { "id": "SessionList", "title": "Session List", "description": "Browse Codex sessions from SQLite." }
+  ]
+}
