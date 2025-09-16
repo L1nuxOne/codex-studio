@@ -1,0 +1,8 @@
+node_modules
+src-tauri/target
+dist
+.DS_Store
+npm-debug.log*
+# Tauri build artifacts
+src-tauri/.cargo
+src-tauri/gen

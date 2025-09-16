@@ -1,0 +1,18 @@
+{
+  "NowPane": {
+    "title": "Now Pane",
+    "description": "Renders Codex stream in real time with metrics and Markdown parsing."
+  },
+  "ComposerPane": {
+    "title": "Composer",
+    "description": "Prompt authoring surface with keyboard shortcuts and workflow integration."
+  },
+  "ToolDrawer": {
+    "title": "Tool Drawer",
+    "description": "Email tool, workflow launcher, and automation surface."
+  },
+  "SessionList": {
+    "title": "Sessions",
+    "description": "SQLite-backed session history and navigation."
+  }
+}
