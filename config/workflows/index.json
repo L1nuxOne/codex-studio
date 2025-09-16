@@ -1,0 +1,8 @@
+[
+  {
+    "id": "status",
+    "name": "Status Update",
+    "description": "Summarize current stream into a concise status email.",
+    "path": "workflows/status.json"
+  }
+]

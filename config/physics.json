@@ -1,0 +1,28 @@
+{
+  "version": 1,
+  "canvas": {
+    "gravity": [0, 900],
+    "bounds": "window",
+    "snap": { "grid": 8, "threshold": 12 }
+  },
+  "modules": [
+    { "id": "now", "type": "NowPane", "pos": [36, 32], "size": [560, 320], "mass": 1.0, "dock": { "side": "top" } },
+    { "id": "composer", "type": "ComposerPane", "pos": [36, 368], "size": [560, 180], "mass": 0.8 },
+    { "id": "tools", "type": "ToolDrawer", "pos": [620, 32], "size": [300, 516], "mass": 1.2 },
+    { "id": "sessions", "type": "SessionList", "pos": [936, 32], "size": [320, 516], "mass": 1.5 }
+  ],
+  "links": [
+    { "from": "composer", "to": "now", "spring": { "k": 0.18, "rest": 24, "damp": 0.9 } },
+    { "from": "now", "to": "tools", "spring": { "k": 0.12, "rest": 48 } }
+  ],
+  "behaviors": [
+    { "if": "stream.active", "then": [
+      { "apply": "dock", "id": "now", "side": "top" },
+      { "apply": "freeze", "id": "sessions" }
+    ] },
+    { "if": "stream.done", "then": [
+      { "apply": "undock", "id": "now" },
+      { "apply": "unfreeze", "id": "sessions" }
+    ] }
+  ]
+}

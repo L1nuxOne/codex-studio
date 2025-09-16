@@ -1,0 +1,15 @@
+{
+  "id": "status",
+  "name": "Status Update",
+  "description": "Compose a crisp project status update email.",
+  "policy": "Stay factual and confident. Highlight progress, blockers, and next steps.",
+  "template": "Subject: {{project}} update\n\nHi {{recipient}},\n\nHere's the latest on {{project}}:\n- Progress: {{progress}}\n- Blockers: {{blockers}}\n- Next: {{next_steps}}\n\nLet me know if you need anything else.\n\nThanks!\n{{sender}}",
+  "inputs": [
+    { "name": "project", "label": "Project", "placeholder": "Codex Studio" },
+    { "name": "recipient", "label": "Recipient", "placeholder": "team@example.com" },
+    { "name": "progress", "label": "Progress", "placeholder": "Implemented streaming orchestration" },
+    { "name": "blockers", "label": "Blockers", "placeholder": "None" },
+    { "name": "next_steps", "label": "Next steps", "placeholder": "Polish email integrations" },
+    { "name": "sender", "label": "Sender", "placeholder": "Codex" }
+  ]
+}

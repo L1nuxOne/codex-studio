@@ -1,0 +1,27 @@
+{
+  "$schema": "https://tauri.app/schema.json",
+  "build": {
+    "beforeDevCommand": "npm run dev:ui",
+    "beforeBuildCommand": "npm run build:ui",
+    "devPath": "http://localhost:1420",
+    "distDir": "../dist"
+  },
+  "package": {
+    "productName": "Codex Studio",
+    "version": "0.1.0"
+  },
+  "tauri": {
+    "bundle": {
+      "identifier": "com.example.codexstudio"
+    },
+    "windows": [
+      {
+        "title": "Codex Studio",
+        "fullscreen": false,
+        "resizable": true,
+        "width": 1280,
+        "height": 800
+      }
+    ]
+  }
+}
