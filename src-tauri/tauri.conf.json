@@ -1,0 +1,37 @@
+{
+  "build": {
+    "beforeDevCommand": "npm run vite",
+    "beforeBuildCommand": "npm run vite:build",
+    "devPath": "http://localhost:5173",
+    "distDir": "../dist"
+  },
+  "package": {
+    "productName": "Codex Studio",
+    "version": "0.0.1"
+  },
+  "tauri": {
+    "allowlist": {
+      "fs": {
+        "all": false,
+        "readFile": true,
+        "writeFile": true
+      },
+      "path": {
+        "all": false,
+        "appDataDir": true,
+        "resolve": true
+      }
+    },
+    "bundle": {
+      "identifier": "studio.codex.app"
+    },
+    "windows": [
+      {
+        "title": "Codex Studio",
+        "width": 1280,
+        "height": 800,
+        "decorations": true
+      }
+    ]
+  }
+}
